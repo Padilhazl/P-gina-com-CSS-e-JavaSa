@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site simples</title>
+    <title>Site Simples</title>
     <style>
-        /*definição o estilo da pagina*/
-        body{
-            font-family: Arial, Helvetica, sans-serif;/*definir fontes do texto*/
-            text-
-
-
-
-
-            button{
+        /*Definição do estilo da página*/
+        body {
+            font-family: Arial, sans-serif;/*Definir a fonte do texto*/
+            text-align: center; /*Centralizar o texto na página*/
+            margin: 50px;/*Definir uma margem ao redor do conteudo*/
+            background-color: #f4f4f4; /*Define a cor de fundo padrão*/            
+        }
+        /* Estilizar o botão*/
+        button{
             padding: 10px 20px; /*Definir o tamanho do botão*/
             font-size: 16px; /*Definir o tamanho da fonte do botão*/
-            cursor: pointer; /*Alterar o curso ao passar sobre o botão*/
-            background-color: blue;
-            color:  white;/*definir a cor texto do botão*/
-            border: none; /*
-           
+            cursor: pointer; /*Alterar o cursor ao passar sobre o botão*/
+            background-color: blue; /*Definir a cor de fundo*/
+            color: white;/*Definir a cor texto do botão*/
+            border: none; /*Remover a borda do botão*/
+            border-radius: 5px; /*Adicionar cantos arredondados ao botão*/
+
+        }
+    </style>
+</head>
+<body>
+    <!--Título principal da página-->
+    <h1>Bem vindo ao Meu Site Simples</h1>
+    <!--Criando o Botão que mudará a cor de fundo da página-->
+    <button onclick="mudarCor()">Mudar Cor de Fundo</button>
+    <script>
+        //Função JavaScript para mudar a cor de fundo da página
+        function mudarCor(){
+            //Gerar uma cor aleatória em formato hexadecimal
+            var corAleatoria = '#' + Math.floor(Math.random()*16777215).toString(16)
+            //Aplica nova cor ao fundo da página
+            document.body.style.background = corAleatoria;
+        }
+    </script>
+</body>
+</html>
 
       
